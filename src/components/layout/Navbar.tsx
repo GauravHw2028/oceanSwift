@@ -4,6 +4,12 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function Navbar() {
+    const navLinks = [
+        { name: 'About', href: '/about' },
+        { name: 'Services', href: '/services' },
+        { name: 'Pricing', href: '/pricing' },
+        { name: 'Contact', href: '/contact' },
+    ];
     return (
         <motion.nav
             initial={{ y: -100, opacity: 0 }}
